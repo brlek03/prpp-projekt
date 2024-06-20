@@ -15,27 +15,27 @@ header {
     z-index: 1000;
 }
 
-nav {
+header nav ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-nav ul {
     list-style: none;
-    display: flex;
     margin: 0;
     padding: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
-nav ul li {
-    margin: 0 10px;
+header nav ul li {
+    margin: 0 15px;
     display: flex;
     align-items: center;
 }
 
-nav ul li a {
+header nav ul li img {
+    width: 50px;
+}
+
+header nav ul li a {
     text-decoration: none;
     color: black;
     padding: 5px 10px;
@@ -43,11 +43,13 @@ nav ul li a {
     transition: background-color 0.3s;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
     background-color: #f0f0f0;
 }
 
 .search-container {
+    display: flex;
+    align-items: center;
     position: relative;
 }
 
@@ -55,11 +57,9 @@ nav ul li a:hover {
     display: none;
     padding: 5px;
     font-size: 16px;
-    margin-left: 5px;
     position: absolute;
     right: 0;
-    top: 100%;
-    z-index: 1000;
+    top: 30px;
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 3px;
@@ -87,12 +87,68 @@ nav ul li a:hover {
 }
 
 main {
+    padding-top: 80px; /* To account for the fixed header */
+}
+
+#novosti {
+    width: 80%;
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+    position: relative;
+}
+
+.mySlides img {
+    width: 100%;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 24px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.row {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
+    margin: 40px 104px;
+
+}
+
+.column {
+    flex: 1;
+    max-width: 45%;
+    display: flex;
     justify-content: center;
-    height: calc(100vh - 100px);
-    padding-top: 80px; 
+    align-items: center;
+}
+
+.column .frame {
+    border: 2px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.column .frame img {
+    width: 100%;
+    height: auto;
 }
 
 footer {
@@ -101,6 +157,7 @@ footer {
     padding: 20px;
     background-color: black;
     color: white;
+    margin-top: 50px;
 }
 
 .footer-content {
@@ -111,7 +168,6 @@ footer {
 
 .footer-content iframe {
    border-radius: 4%;
-
 }
 
 .locations {
@@ -124,5 +180,3 @@ footer {
     flex-direction: column;
     align-items: center;
 }
-
-
