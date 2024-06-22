@@ -1,19 +1,37 @@
 <!DOCTYPE html>
-<html lang="hr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakti i Lokacije</title>
-    <link rel="stylesheet" href="lokacijestyles.css">
+    <title>Kontakt i lokacije</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="navbar">
-        <a href="index.html">
-            <div class="container">
-                <img src="imgs/tvzlogo.svg" alt="TVZ Logo" class="logo">
-            </div>
-        </a>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="imgs/logo.png" alt="TVZ Logo"></a></li>
+                <li><a href="#">Smjerovi</a></li>
+                <li><a href="#">Novosti</a></li>
+                <li><a href="#">Studentski poslovi</a></li>
+                <li><a href="referada.html">Studentska referada</a></li>
+                <li><a href="#">Erasmus</a></li>
+                <li><a href="lokacije.html">Lokacije</a></li>
+                <li><a href="#">Galerija</a></li>
+                <li><a href="#">Pravni dokumenti</a></li>
+                <li><a href="#">Upisi</a></li>
+                <li class="search-container">
+                    <button id="search-icon">🔍</button>
+                    <input type="text" id="search-bar" placeholder="Pretraživanje">
+                </li>
+            </ul>
+        </nav>
     </header>
+    <div class="social-media">
+        <a href="https://www.linkedin.com/school/tehničko-veleučilište-u-zagrebu/posts/?feedView=all" target="_blank"><img src="imgs/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://www.instagram.com/tehnicko_veleuciliste_zagreb/" target="_blank"><img src="imgs/instagram.png" alt="Instagram"></a>
+        <a href="https://www.facebook.com/TVZ.Zagreb/" target="_blank"><img src="imgs/facebook.png" alt="Facebook"></a>
+    </div>
     <div class="main-content">
         <div class="container">
             <div class="contact-info">
@@ -72,4 +90,17 @@
         </div>
     </div>
 </body>
+<footer>
+    <div class="footer-content">
+        <p><strong>Lokacija sjedišta</strong></p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.7974758348155!2d15.966938675564982!3d45.79528497108131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d68b441ce2df%3A0x54e2a03adf42446f!2sZagreb%20University%20of%20Applied%20Sciences!5e0!3m2!1sen!2shr!4v1718919936314!5m2!1sen!2shr" width="400" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="ref">
+        <div class="ref-info">
+            <p><strong>Studentska referada</strong><br><br>Adresa: Vrbik 8, prizemlje<br><br><br>Studij elektrotehnike: Konavoska 2, prizemlje<br><br><br>
+                Studij graditeljstva: Av. V. Holjevca 15, prizemlje</p>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
 </html>
