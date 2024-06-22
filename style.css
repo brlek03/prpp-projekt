@@ -287,3 +287,47 @@ h1 {
     display: block;
     margin-bottom: 5px;
 }
+
+/* galerija */
+
+.gs{
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    
+}
+
+.Naslov{
+    margin-bottom: 50px;
+    max-width: 30%;
+    height:30px;
+    text-align: center;
+    border:2px;
+    border-width: 1px;
+    border-color:blue;
+    padding-top: 10px;
+}
+
+.galslike{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+   
+   
+    
+}
+
+.Slike{
+    width: 30%;
+    height: 30%;
+    text-align: center;
+}
+
+.imgs{
+    max-width: 100%;
+}
+
+.Slike img{
+    max-width: 100%;
+}
